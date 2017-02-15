@@ -297,7 +297,7 @@ function QuatroEmLinha() {
         this.movimentoInvalido = false;
         var alerta = "";
         if (jogador < 0) {
-            alerta = "PareÁe que o computador foi mais inteligente...";
+            alerta = "Parece que o computador foi mais inteligente...";
         } else if (jogador > 0) {
             alerta = "Ora ora, temos um vencedor.";
         } else {
@@ -364,7 +364,7 @@ function QuatroEmLinha() {
     //Fim funcoes do jogador e controladora do jogo			
 
 
-    //Fun√ß√µes respons√°veis pela parte gr√°fica.
+    //FunÁıes responsaveis pela parte gr·fica.
     this.gameStatus = function () {
         contgameStatus++;
         var rightAxis = 0;
@@ -514,7 +514,7 @@ function QuatroEmLinha() {
         }
         escreveValores();
     };
-    //Fim fun√ß√µes gr√°ficas	
+    //Fim funÁıes gr·ficas	
 }
 
 
@@ -542,7 +542,7 @@ function escreveValores() {
     console.log("\n");
 }
 
-//Cria√ß√£o do clone da matriz, chamada na poda.
+//CriaÁ„o do clone da matriz, chamada na poda.
 Array.prototype.clone = function () {
     var tempArray = [], i;
     for (i = 0; i < this.length; i++) {
