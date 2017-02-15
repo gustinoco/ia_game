@@ -1,4 +1,4 @@
-//Variaveis de contadores da função.
+//Variaveis de contadores da funcao.
 var contpodaAlfaBeta;
 var contverificaEstado;
 var contverificaDistanciaMeta;
@@ -23,13 +23,13 @@ function QuatroEmLinha() {
     //inicio da matriz e movimento inicial 0.
     this.matrizArr = [];
     this.movimento = 0;
-    //Iniciação de vars e relação this = this para acessar dps
+    //Iniciacao de vars e relacao this = this para acessar dps
     this.jogoPause = false;
     this.fimTurno = false;
     this.movimentoInvalido = false;
     this.initialize = false;
     var thisObjeto = this;
-    //Declaração de cores e distancia do canvas
+    //Declaracao de cores e distancia do canvas
     var pcPecaCor = '#404040';
     var iaPecaCor = '#0000ff';
     var transparentCor = 'transparent';
@@ -225,7 +225,7 @@ function QuatroEmLinha() {
             maxStateArr[1] = movimento;
             return maxStateArr;
         }
-        //Função Min      
+        //Funcao Min      
         function minState(estadoJogo, profundidadeArvore, podaAlfa, podaBeta) {
             contminState++;
             var minStateArr = [0, 0];
@@ -267,7 +267,7 @@ function QuatroEmLinha() {
     };
     //Fim algoritmo Poda Alfa Beta
 
-    //Funcoes ações do jogador e controladora do jogo.
+    //Funcoes acoes do jogador e controladora do jogo.
     this.atualizaMatriz = function (estadoJogo, matrixCol, value) {
         contatualizaMatriz++;
         var tempMatriz = estadoJogo.clone();
@@ -301,10 +301,10 @@ function QuatroEmLinha() {
         } else if (jogador > 0) {
             alerta = "Ora ora, temos um vencedor.";
         } else {
-            alerta = "Ora ora, pareçe que empatamos...";
+            alerta = "Ora ora, parece que empatamos...";
         }
         alert(alerta);
-        console.log("Resutados finais da execução");
+        console.log("Resutados finais da execucao");
         escreveValores();
         this.context.save();
         this.context.restore();
@@ -351,7 +351,7 @@ function QuatroEmLinha() {
         });
         this.context = this.canvas.getContext('2d');
         this.initialize = true;
-        console.log("Ã?nicio de jogo");
+        console.log("Inicio de jogo");
 
     };
     this.playerTurn = function () {
@@ -364,7 +364,7 @@ function QuatroEmLinha() {
     //Fim funcoes do jogador e controladora do jogo			
 
 
-    //Funções responsaveis pela parte gráfica.
+    //Funcoes responsaveis pela parte gráfica.
     this.gameStatus = function () {
         contgameStatus++;
         var rightAxis = 0;
@@ -514,35 +514,35 @@ function QuatroEmLinha() {
         }
         escreveValores();
     };
-    //Fim funções gráficas	
+    //Fim funcoes gráficas	
 }
 
 
 function escreveValores() {
-    console.log("Listagem execuÃ§Ã£o de chamadas de funÃ§Ãµes:");
-    console.log("Função onclick = " + contonclick);
-    console.log("Função podaAlfaBeta = " + contpodaAlfaBeta);
-    console.log("Função verificaEstado = " + contverificaEstado);
-    console.log("Função verificaDistanciaMeta = " + contverificaDistanciaMeta);
-    console.log("Função iaMovimento = " + contiaMovimento);
-    console.log("Função maxState = " + contmaxState);
-    console.log("Função minState = " + contminState);
-    console.log("Função atualizaMatriz = " + contatualizaMatriz);
-    console.log("Função mensagemGanhador = " + contmensagemGanhador);
-    console.log("Função acao = " + contacao);
-    console.log("Função inicializaJogo = " + continicializaJogo);
-    console.log("Função playerTurn = " + contplayerTurn);
-    console.log("Função gameStatus = " + contgameStatus);
-    console.log("Função limpaBoard = " + contlimpaBoard);
-    console.log("Função pintaBoard = " + contpintaBoard);
-    console.log("Função displayShape = " + contdisplayShape);
-    console.log("Função contdrawCanvasShape = " + contdrawCanvasShape);
-    console.log("Função efeitoJogo = " + contefeitoJogo);
-    console.log("Função shapeInPos = " + contshapeInPos);
+    console.log("Listagem execucaoo de chamadas de funcoes:");
+    console.log("Funcao onclick = " + contonclick);
+    console.log("Funcao podaAlfaBeta = " + contpodaAlfaBeta);
+    console.log("Funcao verificaEstado = " + contverificaEstado);
+    console.log("Funcao verificaDistanciaMeta = " + contverificaDistanciaMeta);
+    console.log("Funcao iaMovimento = " + contiaMovimento);
+    console.log("Funcao maxState = " + contmaxState);
+    console.log("Funcao minState = " + contminState);
+    console.log("Funcao atualizaMatriz = " + contatualizaMatriz);
+    console.log("Funcao mensagemGanhador = " + contmensagemGanhador);
+    console.log("Funcao acao = " + contacao);
+    console.log("Funcao inicializaJogo = " + continicializaJogo);
+    console.log("Funcao playerTurn = " + contplayerTurn);
+    console.log("Funcao gameStatus = " + contgameStatus);
+    console.log("Funcao limpaBoard = " + contlimpaBoard);
+    console.log("Funcao pintaBoard = " + contpintaBoard);
+    console.log("Funcao displayShape = " + contdisplayShape);
+    console.log("Funcao contdrawCanvasShape = " + contdrawCanvasShape);
+    console.log("Funcao efeitoJogo = " + contefeitoJogo);
+    console.log("Funcao shapeInPos = " + contshapeInPos);
     console.log("\n");
 }
 
-//Criação do clone da matriz, chamada na poda.
+//Criacao do clone da matriz, chamada na poda.
 Array.prototype.clone = function () {
     var tempArray = [], i;
     for (i = 0; i < this.length; i++) {
