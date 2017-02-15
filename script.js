@@ -546,7 +546,9 @@ function inicializaNovoJogo(){
 	new QuatroEmLinha().startgame();
 	$("#newGame").hide();
 }
-
+function reiniciaJogo(){
+        location.reload();
+}
 
 
 $(document).ready(function() {	
