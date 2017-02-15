@@ -1,0 +1,44 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Jogo 4 em linha</title>
+	<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		Quatro em linha
+	</header>
+	<section>
+		<div id="game_canvas">
+			<canvas height="480" width="640">			
+			</canvas>
+		</div>
+		<div class="regras">
+			<b>Regras</b>
+			<div class="shapes">
+				<span class="shape_color color_user">oo</span><span>Sua peça</span>
+			</div>
+			<br>
+			<div class="shapes">
+				<span class="shape_color color_ia">oo</span><span>Peça I.A</span>
+			</div>
+			<br>
+			<ul>
+				<li>
+					Você começa.
+				</li>
+				<br>
+				<li>
+					Tente conectar quatro de seus pontos no tabuleiro de jogo <b> verticalmente </b>, <b> horizontalmente </b> ou <b> diagonalmente </b> antes que o computador o faça.
+				</li>				
+			</ul>
+			<br><br><br>
+			<h2><b id="newGame" onclick="inicializaNovoJogo()"style="display:none; cursor:pointer;">Jogar novamente</b></h2>
+		</div>
+	</section>	
+	
+	<script src="jquery-3.1.1.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
